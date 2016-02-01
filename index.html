@@ -1,0 +1,252 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FelRod FB 2016</title>
+  <style>
+    html, body {
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+    }
+  </style>
+  <style id="felrod-style">
+    .felrod-promo-wrap {
+      padding: 2em 2.4em 2.2em;
+    }
+
+    .felrod-promo-circle {
+      border: solid 4px #7f8c8d;
+      border-radius: 50%;
+      height: 420px;
+      margin: 0 auto;
+      position: relative;
+      width: 420px;
+    }
+
+    .felrod-promo-content-body {
+      box-sizing: border-box;
+      color: #363636;
+      font-family: 'Alegreya Sans', sans-serif;
+      padding: 15%;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .felrod-promo-banner {
+      color: #7f8c8d;
+      font-size: 1.5rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    .felrod-promo-banner--bottom {
+      font-weight: 300;
+    }
+
+    .felrod-promo-banner--bottom small {
+      display: block;
+      font-size: 50%;
+      font-weight: 400;
+      font-variant: small-caps;
+      margin-top: .8em;
+    }
+
+    .felrod-promo-header {
+      border-bottom: solid 5px transparent;
+      -moz-border-image: linear-gradient(90deg,#ae2b3d 0,#ae2b3d 16.66667%,#ed8c18 0,#ed8c18 33.33333%,#f7c019 0,#f7c019 50%,#00a24f 0,#00a24f 66.66667%,#115abc 0,#115abc 83.33333%,#4208a1 0,#4208a1) 0 0 5 0;
+      -webkit-border-image: linear-gradient(90deg,#ae2b3d 0,#ae2b3d 16.66667%,#ed8c18 0,#ed8c18 33.33333%,#f7c019 0,#f7c019 50%,#00a24f 0,#00a24f 66.66667%,#115abc 0,#115abc 83.33333%,#4208a1 0,#4208a1) 0 0 5 0;
+      border-image: linear-gradient(90deg,#ae2b3d 0,#ae2b3d 16.66667%,#ed8c18 0,#ed8c18 33.33333%,#f7c019 0,#f7c019 50%,#00a24f 0,#00a24f 66.66667%,#115abc 0,#115abc 83.33333%,#4208a1 0,#4208a1) 0 0 5 0;
+
+      margin-bottom: 1rem;  
+    }
+
+    .felrod-promo-heading {
+      font-family: 'Alegreya Sans', sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      margin: .2rem;
+      text-align: center;
+    }
+
+    .felrod-promo-next-show {
+      background: #fcfcfc;
+      border-radius: 4px;
+      box-shadow: 1px 1px 1px 0 #ccc, 1px -1px 1px 0 #ccc, -1px -1px 1px 0 #ccc, -1px 1px 1px 0 #ccc;
+      margin: 1em 0;
+      padding: .3em 0 .4em;
+      text-align: center;
+    }
+
+    .felrod-promo-next-show span {
+      display: inline-block;
+      font-size: 85%;
+      font-weight: 300;
+      padding: .2em;
+    }
+
+    .felrod-promo-next-show .felrod-promo-time {
+      display: block;
+      font-size: 1.1em;
+      font-weight: 700;
+      padding: .3em 0;
+    }
+
+    .felrod-promo-next-show sup {
+      font-size: 60%;
+      font-weight: 400;
+    }
+
+
+    .felrod-promo-emoji {
+      cursor: pointer;
+      font-size: 1.33em;
+      font-weight: 400;
+      margin: .5rem;
+      position: relative;
+      padding: 0;
+      text-align: center;
+      transition: transform 1s;
+    }
+
+    .felrod-promo-emoji::before {
+      border-bottom: solid 0.33em #ed8c18;
+      border-radius: 33%;
+      content: "";
+      width: 100%; height: 100%;
+      opacity: .91;
+      position: absolute;
+      top: 0; left: 0;
+      transform: translateY(-50%);
+
+      animation-duration: 24s;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      animation-name: rainbow;
+      animation-timing-function: ease-out;
+
+    }
+
+    .felrod-promo-emoji--big {
+      transform: scale(3);
+    }
+
+    .felrod-promo-spinning-emoji {
+      background: #fff;
+      box-sizing: border-box;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      height: 1.7em;
+      padding-top: .15em;
+      width: 1.7em;
+      animation-duration: 8s;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      animation-name: spin;
+      animation-timing-function: cubic-bezier(0.92, 0.3, 0.54, 0.92);
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes rainbow {
+      0% {
+        border-color: #7f8c8d;
+      }
+
+      14% {
+        border-color: #ae2b3d;  
+      }
+
+      28% {
+        border-color: #ed8c18;  
+      }
+
+      42% {
+        border-color: #f7c019;  
+      }
+
+      56% {
+        border-color: #00a24f;
+      }
+
+      70% {
+        border-color: #115abc;
+      }
+
+      84% {
+        border-color: #4208a1;
+      }
+
+      100% {
+        border-color: #7f8c8d;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="felrod-promo-wrap">
+    <div class="felrod-promo-circle">
+      <div class="felrod-promo-content-body">
+        <header class="felrod-promo-header">
+          <p class="felrod-promo-banner">Top 6</p>
+          <h1 class="felrod-promo-heading">
+            Fellatio Rodriguez
+          </h1>          
+        </header>
+        <p class="felrod-promo-banner felrod-promo-banner--bottom">
+          Laughs &bull; Snacks &bull; Improv
+          <small>Est 1999</small>
+        </p>
+        <p class="felrod-promo-emoji" onclick="this.classList.toggle('felrod-promo-emoji--big')">
+          <span class="felrod-promo-spinning-emoji">
+            😆            
+          </span>
+        </p>
+        <p class="felrod-promo-next-show">
+          <span>
+            Come to our next show!
+          </span>
+          <span class="felrod-promo-time">
+            Friday, Feb 19<sup>th</sup> 
+            <span>at</span> 9:00 PM <span>in</span> Winch
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Load fonts we need
+    (function appendFellatioRodriguezFont() {
+      var FONT = "//fonts.googleapis.com/css?family=Alegreya+Sans:400,700,300";
+      var felrodFont= document.createElement("link");
+      felrodFont.href = FONT;
+      felrodFont.rel = "stylesheet";
+      document.head.appendChild(felrodFont);      
+    })();
+
+    function felrodStyle() {
+      var style = document.querySelector("#felrod-style");
+      if (!style) return console.log("Can't find style tag oops. Did you rename its ID?");
+
+      return style.innerHTML;
+    }
+
+    function felrodMarkup() {
+      var container = document.querySelector(".felrod-promo-wrap");
+      return container.innerHTML;
+    }
+  </script>
+</body>
+</html>
